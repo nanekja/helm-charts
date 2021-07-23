@@ -4,11 +4,11 @@ metadata:
   name: {{ include "mysql.fullname" . }}
   labels:
     app: {{ include "mysql.fullname" . }}
-  annotations:
-    "helm.sh/hook": post-install
-    "helm.sh/hook-delete-policy": hook-succeeded
+  #annotations:
+  #  "helm.sh/hook": post-install
+  #  "helm.sh/hook-delete-policy": hook-succeeded
 spec:
-  backoffLimit: 16
+  #backoffLimit: 16
   template:
     spec:
       containers:
